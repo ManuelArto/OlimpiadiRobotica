@@ -37,7 +37,7 @@ def sonoff():
         global state
         while True:
             r = requests.post(
-                f"https://maker.ifttt.com/trigger/{sonoff_event[state]}/with/key/{YOUR_IFTTT_KEY})")
+                f"https://maker.ifttt.com/trigger/{sonoff_event[state]}/with/key/{YOUR_IFTTT_KEY}")
             if r.status_code == 200:
                 break
         state = not state
