@@ -55,14 +55,16 @@ cap = cv2.VideoCapture('http://192.168.0.101:8000/stream.mjpg')     # IP of the 
 def start_stream():
     cv2.namedWindow('Video', cv2.WND_PROP_FULLSCREEN)
     cv2.setWindowProperty('Video', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+    t = threading.Thread()
     while True:
         ret, frame = cap.read()
         cv2.imshow('Video', frame)
 
         key = cv2.waitKey(10)
         if key in actions.keys():
-            t = threading.Thread(target=actions[key])
-            t.start()
+            if not t.isAlive():
+                t = threading.Thread(target=actions[key])
+                t.start()
         elif key == ord('q'):
             exit(0)
 
