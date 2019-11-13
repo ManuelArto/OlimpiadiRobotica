@@ -12,7 +12,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # List of emails
-emails = [["manu", "manuelartociao@gmail.com"], ["geno", "gabrigeno@gmail.com"], ["fede", "federicocrescentini59@gmail.com"]]
+emails = [["name", "example@example.com"]]
 
 message_template = Template("""
 Hi ${PERSON_NAME},
