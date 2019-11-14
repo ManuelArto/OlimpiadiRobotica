@@ -7,8 +7,8 @@ Il progetto ha l’obiettivo di integrare in uno stesso sistema la gestione dei 
 per agevolare le persone con ridotte funzionalità.
 Il progetto fa uso della scheda makey makey, due Raspberry PI e un sonoff. 
 
-There are two python file, one for the raspberry connected to the camera named "Camera.py" in the folder "Raspberry_Camera" and the other one for the raspberry connected to the LCD hdmi screen and the makey makey board named "Easy_Streamer.py" in the folder "Raspberry_Makey".
+Ci sono due python file: uno per il Raspberry connesso alla camera chiamato "Camera.py" nella cartella "Raspberry_Camera", l'altro per il Raspberry connesso al LCD hdmi screen e alla scheda makey makey chiamato "Easy_Streamer.py" nella cartella "Raspberry_Makey".
 
-For running the Camera.py file you will need to download the library RPLCD and the Rpi.GPIO module.
+Per eseguire il file Camera.py dovrai scaricare la libreria RPLCD e il modulo Rpi.GPIO.
 
-For running the Easy_Streamer.py file you will need to install the library opencv-python. You have also to create an IFTTT account and create an applet that let you turn On or Off the sonoff via a web request. Then you need to insert your key in the program. Then you have to insert in the Mail.py file the email and password of the gmail account from where you want to send the email.  
+Per eseguire il file Easy_Streamer.py dovrai scaricare la libreria opencv-python. Avrai anche bisogno di create un IFTTT account e creare un applet che ti permette di accendere e spegnere un sonoff via una richiesta web. Dovrai successivamente inserire la chiave nel programma. Poi dovrai inserire nel file Mail.py le credenziali dell'account gmail da dove vorrai mandare la email.
